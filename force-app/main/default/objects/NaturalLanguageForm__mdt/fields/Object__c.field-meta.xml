@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Object__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Optionally set this to restrict this form for use only on the given objects record page.</inlineHelpText>
+    <label>Object</label>
+    <referenceTo>EntityDefinition</referenceTo>
+    <relationshipLabel>Natural Language Forms</relationshipLabel>
+    <relationshipName>NaturalLanguageForms</relationshipName>
+    <required>false</required>
+    <type>MetadataRelationship</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_small">
+            <template if:true={formComponents.data}>
+                <template for:each={formComponents.data} for:item="formElement">
+                    <template if:true={formElement.label}>
+                        {formElement.value}&nbsp;
+                    </template>
+                    <template if:true={formElement.input}>
+                        <input data-id={formElement.name} key={formElement.name} class="nlField" id={formElement.name} type={formElement.type}>
+                    </template>
+                    <template if:true={formElement.action}>
+                        <a data-id={formElement.name} key={formElement.name} id={formElement.name} href="javascript:void(0);" class="slds-link" onclick={clickAction}>{formElement.value}</a>
+                    </template> 
+                </template>
+            </template>    
+        </div>
+    </lightning-card>
+</template>

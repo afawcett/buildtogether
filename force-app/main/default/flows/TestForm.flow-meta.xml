@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <name>Return_Message</name>
+        <label>Return Message</label>
+        <locationX>246</locationX>
+        <locationY>88</locationY>
+        <assignmentItems>
+            <assignToReference>Response</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>{!TestFormDateInput} and {!TestFormInputText}</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <interviewLabel>TestForm {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TestForm</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Return_Message</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Response</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>TestFormDateInput</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>TestFormInputText</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

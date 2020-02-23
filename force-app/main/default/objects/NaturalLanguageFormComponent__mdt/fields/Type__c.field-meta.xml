@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Label</fullName>
+                <default>true</default>
+                <label>Label</label>
+            </value>
+            <value>
+                <fullName>Input_text</fullName>
+                <default>false</default>
+                <label>Input - text</label>
+            </value>
+            <value>
+                <fullName>Input_date</fullName>
+                <default>false</default>
+                <label>Input - date</label>
+            </value>
+            <value>
+                <fullName>Input_number</fullName>
+                <default>false</default>
+                <label>Input - number</label>
+            </value>
+            <value>
+                <fullName>Action</fullName>
+                <default>false</default>
+                <label>Action</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
