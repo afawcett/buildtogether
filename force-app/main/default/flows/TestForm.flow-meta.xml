@@ -9,7 +9,7 @@
             <assignToReference>Response</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>{!TestFormDateInput} and {!TestFormInputText}</stringValue>
+                <stringValue>Reminder set for {!QuickReminderDateInput} to {!QuickReminderInputText}</stringValue>
             </value>
         </assignmentItems>
     </assignments>
@@ -44,14 +44,14 @@
         <isOutput>true</isOutput>
     </variables>
     <variables>
-        <name>TestFormDateInput</name>
+        <name>QuickReminderDateInput</name>
         <dataType>Date</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>
     <variables>
-        <name>TestFormInputText</name>
+        <name>QuickReminderInputText</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
